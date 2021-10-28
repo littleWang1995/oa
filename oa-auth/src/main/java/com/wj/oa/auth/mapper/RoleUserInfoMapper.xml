@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"    
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+
+<mapper namespace="com.wj.oa.auth.mapper.RoleUserInfoMapper">    
+    
+    <insert id="addRoleInfo" parameterType="com.wj.oa.auth.model.UserRoleInfo" useGeneratedKeys="true" keyProperty="id">
+    	INSERT INTO user_role_info(employee_id,role_id) VALUES(#{employeeId},#{roleId})
+    </insert>
+    
+    <delete id="deleteRoleInfo" parameterType = "java.lang.Long">
+    	delete from user_role_info where id = #{id}
+    </delete>
+    
+    <select id="findById" parameterType="java.lang.Long" resultType="com.wj.oa.auth.model.UserRoleInfo">    
+        SELECT id,employee_id,role_id FROM user_role_info WHERE ID=#{id}  
+    </select>
+    
+</mapper>  
