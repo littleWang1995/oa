@@ -5,4 +5,8 @@ public class TestServiceImpl {
 		
 	}
 
+	
+	private void sayHello() {
+		System.out.println("hello 1");
+	}
 }
