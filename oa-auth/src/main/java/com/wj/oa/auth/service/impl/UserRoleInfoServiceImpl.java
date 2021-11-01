@@ -25,7 +25,7 @@ public class UserRoleInfoServiceImpl implements UserRoleInfoService{
 
 	@Override
 	public UserRoleInfo findById(Long id) {
-		System.out.println("findById");
+		System.out.println("findById-bugfix");
 		UserRoleInfo findById = mapper.findById(id);
 		return findById;
 	}
