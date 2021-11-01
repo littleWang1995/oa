@@ -21,6 +21,7 @@ public class UserRoleInfoServiceImpl implements UserRoleInfoService{
 
 	@Override
 	public void deleteRoleInfo(Long id) {
+		System.out.println("deleteRoleInfo");
 		mapper.deleteRoleInfo(id);
 	}
 
