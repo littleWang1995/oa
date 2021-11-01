@@ -15,11 +15,14 @@ public class UserRoleInfoServiceImpl implements UserRoleInfoService{
 
 	@Override
 	public void addRoleInfo(UserRoleInfo userRoleInfo) {
+		System.out.println("addRoleInfo");
+		System.out.println("addRoleInfo1");
 		mapper.addRoleInfo(userRoleInfo);
 	}
 
 	@Override
 	public void deleteRoleInfo(Long id) {
+		System.out.println("deleteRoleInfo");
 		mapper.deleteRoleInfo(id);
 	}
 
