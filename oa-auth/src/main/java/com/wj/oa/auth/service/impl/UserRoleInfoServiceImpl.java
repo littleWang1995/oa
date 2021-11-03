@@ -15,7 +15,6 @@ public class UserRoleInfoServiceImpl implements UserRoleInfoService{
 
 	@Override
 	public void addRoleInfo(UserRoleInfo userRoleInfo) {
-		System.out.println("李四1");
 		System.out.println("addRoleInfo");
 		System.out.println("addRoleInfo1");
 		mapper.addRoleInfo(userRoleInfo);
