@@ -16,6 +16,7 @@ public class UserRoleInfoServiceImpl implements UserRoleInfoService{
 	@Override
 	public void addRoleInfo(UserRoleInfo userRoleInfo) {
 		System.out.println("finish feature001!!!");
+		System.out.println("张三、。。");
 		System.out.println("addRoleInfo");
 		System.out.println("addRoleInfo1");
 		mapper.addRoleInfo(userRoleInfo);
@@ -29,6 +30,7 @@ public class UserRoleInfoServiceImpl implements UserRoleInfoService{
 
 	@Override
 	public UserRoleInfo findById(Long id) {
+		System.out.println("lisi");
 		System.out.println("finish feature002");
 		UserRoleInfo findById = mapper.findById(id);
 		return findById;
