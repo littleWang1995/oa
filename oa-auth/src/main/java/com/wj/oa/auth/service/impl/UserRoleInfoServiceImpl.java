@@ -19,7 +19,6 @@ public class UserRoleInfoServiceImpl implements UserRoleInfoService{
 		System.out.println("张三、。。");
 		System.out.println("addRoleInfo");
 		System.out.println("addRoleInfo1");
-		System.out.println("完成了上线代码的开发");
 		mapper.addRoleInfo(userRoleInfo);
 	}
 
