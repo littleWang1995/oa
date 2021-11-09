@@ -2,7 +2,7 @@ package com.wj.oa.auth.model;
 
 public class UserRoleInfo {
 	
-	private Long id;
+	private Long id;//这是id
 	private Long employeeId;
 	private Long roleId;
 	
